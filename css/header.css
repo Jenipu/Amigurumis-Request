@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.barras {
+  color: #ee82ee;
+  font-size: 2rem;
+  background: none;
+  border: none;
+}
+
+.logo {
+  color: #ee82ee;
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.navegar {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+
+.mostrar {
+  display: block;
+}
+
+@media (min-width: 500px) {
+  .navegar {
+    display: block;
+    position: initial;
+  }
+  .navegar ol {
+    display: flex;
+    gap: 1rem;
+  }
+  .navegar ol li a {
+    text-transform: capitalize;
+  }
+  .barras {
+    display: none;
+  }
+}
